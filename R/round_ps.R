@@ -26,6 +26,6 @@
 round_ps <- function(x) {
   ifelse(x < .001,
          "< .001",
-         sub(".", "= ", format(round(x, 3), nsmall = 3))
+        format(round(x, 3), nsmall = 3)
   )
 }
